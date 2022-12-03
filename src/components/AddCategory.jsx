@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { GifGrid } from './GifGrid';
+import PropTypes from 'prop-types'
 
 export const AddCategory = ({ onNewValue }) => {
 
@@ -25,7 +25,7 @@ export const AddCategory = ({ onNewValue }) => {
     }
 
     return (
-        <form onSubmit={ onSubmit }>
+        <form onSubmit={ onSubmit } aria-label='form'>
             <input 
                 type="text"
                 placeholder="Search gifs"
@@ -36,4 +36,9 @@ export const AddCategory = ({ onNewValue }) => {
         </form>
         
     )
+}
+
+
+AddCategory.propTypes = {
+    onNewValue: PropTypes.func.isRequired,
 }
