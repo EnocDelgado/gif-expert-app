@@ -17,3 +17,6 @@ npm install @babel/react-preset
 
 ## run
 npm run dev
+
+### Build
+npm run build
