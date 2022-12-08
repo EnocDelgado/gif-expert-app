@@ -12,7 +12,7 @@ export const GifExpertApp = () => {
         if ( categories.includes( newCategory) ) return;
 
         // with spreadOperator we can add a new value
-        setCategories([ ...categories, newCategory])
+        setCategories([ newCategory, ...categories])
     }
 
     return (
